@@ -4,7 +4,7 @@ This project reads real-time **accelerometer** and **gyroscope** data from the M
 
 ---
 
-## 📦 Components Required
+## Components Required
 
 - Arduino UNO
 - MPU6050 (Accelerometer + Gyroscope)
@@ -14,7 +14,7 @@ This project reads real-time **accelerometer** and **gyroscope** data from the M
 
 ---
 
-## 🔌 Circuit Connections
+## Circuit Connections
 
 | **MPU6050** | Arduino UNO |
 |-------------|-------------|
@@ -29,12 +29,9 @@ This project reads real-time **accelerometer** and **gyroscope** data from the M
 | GND              | GND         |
 | SDA              | A4          |
 | SCL              | A5          |
-
-> ⚠️ Both devices share the I2C bus — connect both SDA lines to A4 and both SCL lines to A5. Ensure solid connections.
-
 ---
 
-## 🧰 Arduino Libraries Used
+## Arduino Libraries Used
 
 Install these libraries via the **Arduino Library Manager**:
 
@@ -44,7 +41,7 @@ Install these libraries via the **Arduino Library Manager**:
 
 ---
 
-## 🧠 Project Features
+## Project Features
 
 - Initializes MPU6050 manually over I2C
 - Displays real-time values of:
