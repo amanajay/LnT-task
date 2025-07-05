@@ -50,8 +50,3 @@ Install these libraries via the **Arduino Library Manager**:
 - Uses `U8g2` to display clean, readable text on OLED
 - Serial Monitor also shows the same output
 
----
-
-## 🧪 Example Output
-
-### OLED Display:
