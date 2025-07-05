@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Aman Ajay",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": -22.2, "left": -688.4, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -258.6, "left": -307.8, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": -255.38, "left": -669.68, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 252.74,
+      "left": -383.77,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "bb1:45b.j", "uno:A4", "green", [ "v0" ] ],
+    [ "imu1:SDA", "bb1:45b.f", "green", [ "v0" ] ],
+    [ "imu1:SCL", "bb1:46b.f", "green", [ "v0" ] ],
+    [ "bb1:46b.j", "uno:A5", "green", [ "v0" ] ],
+    [ "imu1:GND", "uno:GND.2", "black", [ "v0" ] ],
+    [ "oled1:GND", "uno:GND.3", "black", [ "v0" ] ],
+    [ "oled1:SCL", "bb1:46b.g", "green", [ "v0" ] ],
+    [ "oled1:SDA", "bb1:45b.g", "green", [ "v0" ] ],
+    [ "oled1:VCC", "uno:3.3V", "red", [ "v0" ] ],
+    [ "imu1:VCC", "uno:5V", "red", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
